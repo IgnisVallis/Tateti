@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(146, 184, 86);
+ 
+}
+
+h1{
+    text-align: center;
+}
+.game-section{
+display: flex;
+justify-content: space-around;
+
+margin-top: 10rem;
+}
+.tablero{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+.casilla{
+    border: 1px solid #000;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player > span{
+    font-size: 3em;
+}
+.player img{
+    width: 10rem;
+    height: 10rem;
+}
+.mikudayo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
