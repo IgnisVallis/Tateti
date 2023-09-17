@@ -7,14 +7,17 @@ body{
     background-color: rgb(146, 184, 86);
  
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+  
+}
 h1{
     text-align: center;
 }
 .game-section{
 display: flex;
 justify-content: space-around;
-
 margin-top: 10rem;
 }
 .tablero{
@@ -40,8 +43,51 @@ margin-top: 10rem;
     width: 10rem;
     height: 10rem;
 }
-.mikudayo{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.casilla p{
+    text-align: center;
+    display: flex;
+    font-size: 8em;
+    align-items: center;
+    justify-content: center;
+}
+.restart{
+    margin: 0 auto;
+    width: 18rem;
+    height: 3rem;
+}
+
+@media (max-width:1200px){
+    .tablero{
+        width: 300px;
+        height: 300px;
+      }
+    .player > span{
+        font-size: 2em;
+    }
+    .player img{
+        width: 7rem;
+        height: 7rem;
+    }
+    .casilla p{
+     font-size: 3em;
+    }
+}
+
+
+@media (max-width:800px){
+    .tablero{
+        width: 200px;
+        height: 200px;
+      }
+    .player > span{
+        font-size: 1em;
+    }
+    .player img{
+        width: 5rem;
+        height: 5rem;
+    }
+    .restart{
+       width: 8rem;
+        height: 3rem;
+    }
 }
